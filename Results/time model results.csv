@@ -1,0 +1,5 @@
+,Zero-Shot,Few-Shot
+"Train, Non-Thinking",6.97,8.63
+"Train, Thinking",363.44,344.47
+"Validate, Non-Thinking",10.99,11.23
+"Validate, Thinking",476.90,468.88
