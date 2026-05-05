@@ -25,36 +25,44 @@ Instructions for running the 1.Community_Mining, 2.DataMiningDataCleaning, 3.Com
 
 ### Instructions to run the LLM Model code
 Instructions for running the OSTRICH_LLM_Model_no_think and OSTRICH_LLM_Model_think notebooks on the university lab machines:
-1. Follow these instructions to ssh into one of the university lab325 machines:
+1. Follow these instructions to ssh into one of the university lab325 machines: https://infospaces.cs.colostate.edu/watch.php?id=272
 2. Select the Scripts folder.
 3. Open the OSTRICH_LLM_Model_no_think jupyter notebook.
+   
 **NOTE:** VSCode will prompt you to select a environment kernel before running the jupyter notebook, choose the py313 kernel from the available options.
-4. In cell 3, line 10 of the OSTRICH_LLM_Model_no_think jupyter notebook, update the Hugging Face token with a valid token to access the Hugging Face models here: "token = """.
-5. In cell 6, line 3 of the OSTRICH_LLM_Model_no_think jupyter notebook, update the GitHub PAT with a valid token to access the TalonHub/Community repository here: "token = """.
-6. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_LLM_Model_no_think jupyter notebook and view the output from the training and validate datasets run on the zero-shot and few-shot models with Non-Thinking mode.
+
+5. In cell 3, line 10 of the OSTRICH_LLM_Model_no_think jupyter notebook, update the Hugging Face token with a valid token to access the Hugging Face models here: "token = """.
+6. In cell 6, line 3 of the OSTRICH_LLM_Model_no_think jupyter notebook, update the GitHub PAT with a valid token to access the TalonHub/Community repository here: "token = """.
+7. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_LLM_Model_no_think jupyter notebook and view the output from the training and validate datasets run on the zero-shot and few-shot models with Non-Thinking mode.
+
 **NOTE:** Each cell at the bottom of the notebook that calls the model_output function will take around 10 minutes to run and output 3 files per cell.
+
 13. Open the OSTRICH_LLM_Model_think jupyter notebook.
 14. In cell 3, line 10 of the OSTRICH_LLM_Model_think jupyter notebook, update the Hugging Face token with a valid token to access the Hugging Face models here: "token = """.
 15. In cell 6, line 3 of the OSTRICH_LLM_Model_think jupyter notebook, update the GitHub PAT with a valid token to access the TalonHub/Community repository here: "token = """.
 16. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_LLM_Model_think jupyter notebook and view the output from the training and validate datasets run on the zero-shot and few-shot models with Thinking mode.
+    
+**NOTE:** Each cell at the bottom of the notebook that calls the model_output function will take around 6 and a half hours to run and output 3 files per cell.
 
 ### Instructions to run the Metrics and Stats code
 Instructions for running the OSTRICH_Metrics_And_Stats_RQ1 and OSTRICH_Metrics_And_Stats_RQ1 notebooks on the university lab machines:
 1. Select the Scripts folder.
 2. Open the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook.
+   
 **NOTE:** VSCode will prompt you to select a environment kernel before running the jupyter notebook, choose the py313 kernel
-3. In cell 2 of the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook, the filename for the "with open" command will be set to the zero-shot model categorization results from the training dataset.
+
+4. In cell 2 of the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook, the filename for the "with open" command will be set to the zero-shot model categorization results from the training dataset.
     1. To view the zero-shot model categorization results from the validation dataset, change the filename to 'category_model_results_validate_zero.csv'
-4. In cell 4 of the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the zero-shot model categorization results from the training dataset.
+5. In cell 4 of the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the zero-shot model categorization results from the training dataset.
     1. To save the png for the zero-shot model categorization results from the validation dataset, change the filename to 'validate_zero_shot_cm.png' 
-5. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook and view the confusion matrices, F-1 scores, McNemar's results, and Hamming Loss scores for the zero-shot model and dummy stratified classifier
-6. Open the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook
-7. In cell 2 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "with open" command will be set to the zero-shot model categorization results from the training dataset.
+6. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook and view the confusion matrices, F-1 scores, McNemar's results, and Hamming Loss scores for the zero-shot model and dummy stratified classifier
+7. Open the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook
+8. In cell 2 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "with open" command will be set to the zero-shot model categorization results from the training dataset.
     1. To view the zero-shot model categorization results from the validation dataset, change the filename to 'category_model_results_validate_zero.csv'
-8. In cell 3 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "with open" command will be set to the few-shot model categorization results from the training dataset.
+9. In cell 3 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "with open" command will be set to the few-shot model categorization results from the training dataset.
     1. To view the few-shot model categorization results from the validation dataset, change the filename to 'category_model_results_validate_few.csv'
-9. In cell 6 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the zero-shot model categorization results from the training dataset.
+10. In cell 6 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the zero-shot model categorization results from the training dataset.
     1. To save the png for the zero-shot model categorization results from the validation dataset, change the filename to 'validate_zero_shot_cm.png'
-10. In cell 7 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the few-shot model categorization results from the training dataset.
+11. In cell 7 of the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook, the filename for the "plt.savefig" command will be set to save the confusion matrix as a png named for the few-shot model categorization results from the training dataset.
     1. To save the png for the few-shot model categorization results from the validation dataset, change the filename to 'validate_few_shot_cm.png'
-11. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook and view the confusion matrices, F-1 scores, McNemar's results, Hamming Loss scores, and thinking and non-thinking throughput line graphs for the zero-shot model and few-shot model
+12. Select Run All from the notebook toolbar to run each cell in order in the OSTRICH_Metrics_and_Stats_RQ2 jupyter notebook and view the confusion matrices, F-1 scores, McNemar's results, Hamming Loss scores, and thinking and non-thinking throughput line graphs for the zero-shot model and few-shot model
