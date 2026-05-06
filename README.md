@@ -50,6 +50,7 @@ Instructions for running the OSTRICH_Metrics_And_Stats_RQ1 and OSTRICH_Metrics_A
 2. Open the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook.
    
 **NOTE:** VSCode will prompt you to select a environment kernel before running the jupyter notebook, choose the py313 kernel
+
 **NOTE:** If you would like to run the Metrics_And_Stats notebooks without running the LLM_Model notebooks, then add '../Results/' in front of the filenames listed below to utilize the Results folder that is included in the Replication Package.
 
 4. In cell 2 of the OSTRICH_Metrics_and_Stats_RQ1 jupyter notebook, the filename for the "with open" command will be set to the zero-shot model categorization results with thinking mode enabled from the training dataset.
